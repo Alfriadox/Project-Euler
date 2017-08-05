@@ -27,6 +27,8 @@ fn get_problem(n: u32) {
     match n {
         1 => { q_1::main(); },
         2 => { q_2::main(); },
+        3 => { q_3::main(); },
+        4 => { q_4::main(); },
         _ => { println!("Question {} not yet solved.", n); },
     }
 }
