@@ -29,7 +29,9 @@ fn get_problem(n: u32) {
         2 => { q_2::main(); },
         3 => { q_3::main(); },
         4 => { q_4::main(); },
+        10 => { q_10::main() },
         100 => { q_100::main(); },
+        //590 => { q_590::main(); },
         _ => { println!("Question {} not yet solved.", n); },
     }
 }

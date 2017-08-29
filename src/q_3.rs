@@ -28,13 +28,19 @@ fn get_factors(n: u64) -> Vec<u64> {
     v
 }
 
-fn is_prime(n: u64) -> bool { // at worst O(n)
-    for x in 2..n/2+1 {
-        if n%x == 0 {
-            return false;
+pub fn is_prime(n: u64) -> bool { // at worst O(n)
+    if n < 2 {
+        false
+    } else if n == 2 {
+        true
+    } else {
+        for x in 2..n/2+1 {
+            if n%x == 0 {
+                return false;
+            }
         }
+        return true;
     }
-    return true;
 }
 
 fn get_greatest_prime_factor(n: u64) -> u64 { // O((n/4)*(n+1))

@@ -14,7 +14,7 @@ pub fn main() {
 
     loop {
         let k = (c1.powi(ind) + c2.powi(ind))/2f64;
-        red = ((c1.powi(ind) + c2.powi(ind)) / (2f64*8f64.sqrt()));
+        red = (c1.powi(ind) + c2.powi(ind)) / (2f64*8f64.sqrt());
         blue = red + ( 1f64 + k ) / 2f64 ;
         if (blue + red) > total {
             println!("{}", blue.ceil() as u64);
